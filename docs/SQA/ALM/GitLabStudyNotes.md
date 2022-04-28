@@ -35,7 +35,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always \
            -v portainer_data:/data portainer/portainer-ce:2.11.1
 ```
 
-![](<.gitbook/assets/image (13).png>)
+![](<./image13.png>)
 
 #### GitLab安装
 
@@ -192,7 +192,7 @@ user通过role进入group、subgroup或project中映射为member，显而易见�
 * 共享目标（分享者）仅遵循人员结构原则，即仅将共享目标的group/subgroup的direct member与其下属的所有group/subgroup/project的direct member作为共享目标
 * 传递中会受到共享源最大角色的设定限制
 
-![img](./image%20(7).png)
+![img](./image7.png)
 
 ### 角色和权限
 
@@ -206,7 +206,58 @@ GitLab属于预置角色模型，开源提供了几种基本角色，即：
 
 在官方手册中给出了基本定义 [product handbook on permission](https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab)整理后图表见下：
 
-![img](./image%20(17).png)
+![img](./image17.png)
 
-### 项目权限
+
+## 代码提交和合并
+
+### 分支模式
+
+#### 背景
+
+git存在多种经典的分支模式
+
+##### git-flow
+
+于2010年左右提出的经典git模型，存在长期分支master和develop ，工作分支feature和hotfix以及发布分支release，模型完整自洽，较为繁琐。
+
+相关实现：[https://github.com/petervanderdoes/gitflow-avh](https://github.com/petervanderdoes/gitflow-avh)
+
+>这个模型实际较为古老，可以上述到CVS是时代乃至更早的开源社区，提交独立而分治的思想在提交者具有很好的面向合并的工作意识的前提下非常灵活，但在商业环境下，这一点可能会导致分而不治的情况出现
+
+![git-flow](<./image9.png>)
+
+![更加复杂的例子](<./image11.png>)
+
+##### github-flow
+
+由github提出的模型，基本思想为master随时可用，工作分支扁平，体现了CI/CD的核心思维。会发生官方文档： [https://docs.github.com/en/get-started/quickstart/github-flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+
+![](<./image18.png>)
+
+
+>如果系统确实无法拆分而形成复杂的依赖代码组织的编译前架构，过于扁平的工作分支会带来混乱。
+
+
+#### Gitlab Flow
+
+gitlab-flow基本遵循github-flow思想，但为了适应具有计划性的发布要求，增加了预发布和发布分支。
+
+同时，gitlab也支持feature分支[https://docs.gitlab.com/ee/topics/git/feature\_branch\_development.html](https://docs.gitlab.com/ee/topics/git/feature\_branch\_development.html)
+
+![](<./image12.png>)
+
+### 合并请求
+
+#### 背景
+
+合并请求（Merge Request MR）用于进行代码提交前检查（Pre-Commit Code Reviews），该功能在非分布式版本控制工具中以Patch方式提交和检查，但无法应对多次提交等情况，这一状况随着git/gerrit的出现的得到完美解决。
+
+#### 基本概念
+
+MR即在GitLab上一个从A分支到B的合并请求，一般而言，B分支为受保护分支（Protected Branch），不允许直接推送
+
+首先 需要注意，可能因为合并请求（Merge Request）是以code为中心的Gitlab方案的核心功能，此功能成为版本差异的重灾区，大部分企业级的细致管控需求均需要付费版本支持。
+
+aadd
 

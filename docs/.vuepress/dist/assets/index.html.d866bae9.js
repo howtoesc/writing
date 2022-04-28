@@ -1,0 +1,6 @@
+import{_ as e,c as a}from"./app.269701b8.js";const s={},n=a(`<h1 id="hello-vuepressdd" tabindex="-1"><a class="header-anchor" href="#hello-vuepressdd" aria-hidden="true">#</a> Hello VuePressdd</h1><h2 id="dd" tabindex="-1"><a class="header-anchor" href="#dd" aria-hidden="true">#</a> dd</h2><ul><li>\u6211\u518D\u60F3\u4E00\u60F3</li><li>\u4E00\u4E9B\u4E8C\u60C5ddddd</li></ul><div class="language-mermaid ext-mermaid line-numbers-mode"><pre class="language-mermaid"><code><span class="token keyword">sequenceDiagram</span>
+Alice<span class="token arrow operator">-&gt;</span>John<span class="token operator">:</span> Hello John, how are you?
+<span class="token keyword">loop</span> every minute
+    John<span class="token arrow operator">--&gt;</span>Alice<span class="token operator">:</span> Great!
+<span class="token keyword">end</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div>`,4);function r(d,l){return n}var i=e(s,[["render",r],["__file","index.html.vue"]]);export{i as default};

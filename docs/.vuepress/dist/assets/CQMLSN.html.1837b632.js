@@ -1,0 +1,1 @@
+import{_ as e,o as r,a as t}from"./app.269701b8.js";const _={};function c(a,n){return r(),t("p",null,"\u4EE3\u7801\u8D28\u91CF\u5EA6\u91CF\u5B66\u4E60\u7B14\u8BB0")}var l=e(_,[["render",c],["__file","CQMLSN.html.vue"]]);export{l as default};

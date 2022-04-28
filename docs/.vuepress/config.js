@@ -1,3 +1,4 @@
+const { searchPlugin } = require('@vuepress/plugin-search')
 const { defaultTheme } = require('vuepress')
 
 module.exports = {
@@ -16,6 +17,10 @@ module.exports = {
               '/SQA/ALM/GitLabStudyNotes.md',
               '/SQA/ALM/ZenDaoStudyNotes.md',
             ],
+          },
+          {
+            text: 'CI&CD',
+            children: ['/SQA/CI&CD/JenkinsLSN.md', '/SQA/CI&CD/CQMLSN.md'],
           },
           {
             text: 'CI&CD',
@@ -46,5 +51,10 @@ module.exports = {
       '/bar/README.md',
     ],
   }),
-  plugins: ['vuepress-plugin-mermaidjs', 'mermaidjs'],
+  plugins: [
+    ['mermaidjs', { gantt: { barHeight: 40 } }],
+    searchPlugin({
+      // 配置项
+    }),
+  ],
 }
