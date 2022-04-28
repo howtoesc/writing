@@ -1,30 +1,17 @@
 ---
 home: true
-heroImage: /hero.png
-heroText: Hero 标题
-tagline: Hero 副标题
-actionText: 快速上手 →
+title: HowtoEsc的工作笔记
+heroImage: /images/hero.jpg
+heroText: HowtoEsc的工作笔记 
+tagline: 無它 惟手不熟爾
+actionText: HowtoEsc的工作笔记
 actionLink: /zh/guide/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 软件质量控制
+  details: 关注从务过程改进到云原生持续交付中的方方面面
+- title: 中台产品研究
+  details: 赚的猪儿钱，要和猪儿眠，学习各种中台技术流行趋势
+- title: 工具箱
+  details: 各种装腔作势的工具链和脚手架，居家旅行必备良药
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
-
-# HowtoEsc的工作笔记
-
-## dd
-- 我再想一想
-- 一些二情ddddd
-
-``` mermaid
-sequenceDiagram
-Alice->John: Hello John, how are you?
-loop every minute
-    John-->Alice: Great!
-end
-```
