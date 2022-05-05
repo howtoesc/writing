@@ -1,1 +1,0 @@
-const e={key:"v-f669f296",path:"/SQA/CI&CD/JenkinsLSN.html",title:"Jenkins\u5B66\u4E60\u7B14\u8BB0",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u80CC\u666F",slug:"\u80CC\u666F",children:[]}],git:{updatedTime:null,contributors:[]},filePathRelative:"SQA/CI&CD/JenkinsLSN.md"};export{e as data};

@@ -61,20 +61,7 @@ sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 #### 网络相关
 
-一般的使用docker engine的端口映射即可解决外部网络访问，如果需要暴露docker私有IP则可以尝试在全局路由表中增加条目
 
-```bash
-##Windows：route add -p 172.17.0.0 mask 255.255.0.0 192.168.1.7
-ip route add 172.17.0.0/16 via 192.168.1.7
-```
-
-> rootless会干扰Ping
->
-> [https://docs.docker.com/engine/security/rootless/](https://docs.docker.com/engine/security/rootless/)
->
-> 如果使用Docker Desktop也会干扰Ping
->
-> 可能需要进一步更改host的NAT配置，请参考[https://blog.csdn.net/lvshaorong/article/details/69950694](https://blog.csdn.net/lvshaorong/article/details/69950694)
 #### 改变URL
 
 [https://docs.gitlab.com/omnibus/settings/configuration.html](https://docs.gitlab.com/omnibus/settings/configuration.html)

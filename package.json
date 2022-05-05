@@ -4,16 +4,16 @@
   "devDependencies": {
     "eslint": "^8.14.0",
     "eslint-config-vuepress": "^3.7.1",
-    "prettier": "2.6.2",
+    "prettier": "^2.6.2",
     "prettier-config-vuepress": "^1.4.0"
   },
   "dependencies": {
     "@vuepress/plugin-search": "next",
-    "vuepress": "^2.0.0-beta.41",
-    "vuepress-plugin-mermaidjs": "^2.0.0-beta.2"
+    "vuepress": "next",
+    "vuepress-plugin-md-enhance": "next"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress --debug dev docs",
     "docs:build": "vuepress build docs"
   },
   "prettier": "prettier-config-vuepress"
