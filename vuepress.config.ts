@@ -12,7 +12,6 @@ export default {
   ],
 
   theme: defaultTheme({
-    // const { webpackBundler } = require('@vuepress/bundler-webpack')
     lang: 'zh-CN',
     repo: 'howtoesc/writing',
     repoLabel: 'Repo',
